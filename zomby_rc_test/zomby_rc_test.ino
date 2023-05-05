@@ -83,7 +83,7 @@ void loop() {
   {
     speed = 64;
   }
-  if (difference >= -1 && difference <= 1)
+  if (difference >= -2 && difference <= 2)
   {
     difference = 0;
   }
@@ -97,3 +97,5 @@ void loop() {
   roboclaw.ForwardBackwardM1(right_rear,  final_speed_right);
 
 }
+
+

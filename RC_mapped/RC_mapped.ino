@@ -11,7 +11,7 @@
 //Create an instance of a receiver
 //You can put up to 8 channels pin with one receiver instance
 //ex : RC_Receiver receiver('ch1','ch2','ch3','ch4','ch5','ch6','ch7','ch8',);
-RC_Receiver receiver(13,3,4,5);
+RC_Receiver receiver(13,11,9,7,5,3);
 
 //Channel min and max value
 //Use the RC_raw script to get the min max val by moving your joystick up and down
@@ -19,12 +19,10 @@ RC_Receiver receiver(13,3,4,5);
 //Leave the default value for the un used channels
 //First val is the min and the second is the max
 //Invert the min and max val to reverse
-int minMax[8][2] = 
+int minMax[6][2] = 
 { 
 	{1088,1880}, 
-	{1010,2020}, 
-	{1010,2020}, 
-	{1010,2020}, 
+	{1087,1872}, 
 	{1010,2020}, 
 	{1010,2020}, 
 	{1010,2020}, 
@@ -50,6 +48,10 @@ void loop() {
    Serial.print(receiver.getMap(3));
    Serial.print("\t");  
    Serial.print(receiver.getMap(4));
+   Serial.print("\t");
+   Serial.print(receiver.getMap(5));
    Serial.print("\t");  
+   Serial.print(receiver.getMap(6));
+   Serial.print("\t");    
    Serial.println();
 }
