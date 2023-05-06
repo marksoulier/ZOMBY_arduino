@@ -14,5 +14,10 @@ Right front: 0x82 (130)
 Left rear: 0x83 (131)
 Right rear: 0x84 (132)
 
-Below is some code we used to test the ZOMBY and the RoboClaw library. We based it off of the SimplePWM example.
+We made "zomby_test" to test the ZOMBY and the RoboClaw library. We based it off of the SimplePWM example on the RoboClaw library github page.
 
+We made "zomby_rc_test" to test controlling the ZOMBY with a radio transmitter.
+
+For that, we used an arduino library called RC Receiver. It makes mapping RC receiver input quick and simple. There are two pieces of code that allow you to test your RC receiver input and map it to a usable value:
+- RC_raw: prints raw input from RC receiver to serial monitor. 
+- RC_mapped: allows you to set the max and min raw input of each channel so the library can correctly map it to a value from 0 to 100.
