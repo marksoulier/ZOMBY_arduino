@@ -26,9 +26,11 @@ int minMax[5][2] = {
 #include "RoboClaw.h"
 
 // See limitations of Arduino SoftwareSerial
-// Rx pin: 0
-// TX pin: 1
-SoftwareSerial serial(0,1);	
+// Rx pin: 18
+// TX pin: 19
+// Rx1 and Tx1 are used in place of Rx0 and Tx0 to separate communication with
+// serial monitor and motor controllers.
+SoftwareSerial serial(18,19);	
 RoboClaw roboclaw(&serial,10000);
 
 // Addresses (in hexadecimal) of each of the 4 motor controllers
