@@ -16,3 +16,20 @@ Right rear: 0x84 (132)
 
 Below is some code we used to test the ZOMBY and the RoboClaw library. We based it off of the SimplePWM example.
 
+Zomby is able to run both with radio controller and by ros2
+
+Zomby rasberrypi
+
+username:Zomby
+ip-address on robotics_lab_2.4 is: 192.168.1.4
+password: usurobotics
+
+to connect on seperate computer use the following command in the terminal:
+ssh zomby@192.168.1.4
+
+To run iniate ros2
+run: ros2 run zomby_robot
+
+
+
+
